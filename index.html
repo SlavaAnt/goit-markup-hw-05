@@ -82,11 +82,25 @@
          <section class="section hero">
             <div class="container">
                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-               <button class="hero-button" type="button">
+               <button class="hero-button" type="button" data-modal-open>
                   Замовити послугу
                </button>
             </div>
          </section>
+
+         <!--Modal window-->
+
+            <div class="backdrop is-hidden"data-modal>
+               <div class="modal">
+                  <button class="modal-button" type="button" data-modal-close>
+                     <svg width="30" height="30">
+                        <use href="./images/icons.svg#close"></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <script src="./js/modal.js">
+            </script>
 
          <!--Особливості-->
 
@@ -153,31 +167,52 @@
                <h2 class="work-title">Чим ми займаємося</h2>
                <ul class="work-list list">
                   <li class="work-item">
-                     <img
-                        class="work-img img"
-                        src="./images/job/job1.1.jpg"
-                        alt="programer-is-working-his-desk-office"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-thumb">                  
+                        <img
+                           class="work-img img"
+                           src="./images/job/job1.1.jpg"
+                           alt="programer-is-working-his-desk-office"
+                           width="370"
+                           height="294"
+                        />
+                        <div class="work-label" >
+                           <p class="work-text">
+                              Десктопні додатки
+                           </p>
+                        </div>
+                     </div>
                   </li>
                   <li class="work-item">
-                     <img
-                        class="work-img img"
-                        src="./images/job/job2.1.jpg"
-                        alt="creators-is-working-interface-mobile-phones"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-thumb">  
+                        <img
+                           class="work-img img"
+                           src="./images/job/job2.1.jpg"
+                           alt="creators-is-working-interface-mobile-phones"
+                           width="370"
+                           height="294"
+                        />
+                        <div class="work-label" >
+                           <p class="work-text">
+                              Мобільні додатки
+                           </p>
+                        </div>
+                     </div>
                   </li>
                   <li class="work-item">
-                     <img
-                        class="work-img img"
-                        src="./images/job/job3.1.jpg"
-                        alt="designer-is-working-with-colours-selection-on-tablet"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-thumb">  
+                        <img
+                           class="work-img img"
+                           src="./images/job/job3.1.jpg"
+                           alt="designer-is-working-with-colours-selection-on-tablet"
+                           width="370"
+                           height="294"
+                        />
+                        <div class="work-label" >
+                           <p class="work-text">
+                              Дизайнерські рішення
+                           </p>
+                        </div>
+                     </div>
                   </li>
                </ul>
             </div>
