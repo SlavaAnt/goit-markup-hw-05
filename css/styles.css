@@ -61,7 +61,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 h1,
 h2,
 h3,
@@ -252,6 +251,8 @@ p {
   height: 100%;
   z-index: 1000;
   background-color: var(--bgr-modal-black);
+  opacity: 0;
+  visibility: hidden;
 }
 .modal {
   width: 528px;
